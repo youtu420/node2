@@ -2,14 +2,13 @@ version: '3.8'
 
 services:
   wings:
-    image: ghcr.io/pterodactyl/wings:develop
+    image: ghcr.io/pterodactyl/wings:latest
     restart: always
     networks:
       - wings0
     ports:
       - "8080:8080"
       - "2022:2022"
-      - "443:443"
     tty: true
     environment:
       TZ: "UTC"
